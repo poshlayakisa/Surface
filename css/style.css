@@ -1,0 +1,771 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    width: 1560px;
+}
+.mini-container {
+    width: 70%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.athlets .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.athlets {
+    width: 100%;
+}
+
+.players {
+    width: 100%;
+}
+
+.players .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 100%;
+}
+
+.step .container {
+    width: 100%;
+}
+
+/* РАЗБИВКА САЙТА НА КОЛОННЫ */
+
+.col-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    flex-basis: 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+/* ПОЕХАЛИ (ХЕАДЕР) */
+
+header .col-12 {
+    display: flex;
+}
+
+.mgt-45px {
+    margin-top: 45px;
+    justify-content: center;
+}
+
+
+
+.mgt-28px {
+    margin-top: 28px;
+    justify-content: flex-end;
+}
+
+header .col-12 p {
+    font-size: 90px;
+    font-family: "OS_Bold";
+    color: white;
+}
+
+.flex-flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pd-bot-120px {
+    padding-bottom: 120px;
+}
+
+header .col-3 {
+    display: flex;
+    justify-content: center;
+}
+
+footer .col-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-games {
+    display: flex;
+    width: 310px;
+    height: 77px;
+    background-color: #5e42b0;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: .5s;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-games-text p:nth-child(1) {
+    font-family: "OS_Regular";
+    font-size: 14px;
+    color: white;
+}
+
+.btn-games-text p:nth-child(2) {
+    font-family: "OS_Bold";
+    font-size: 14px;
+    color: white;
+}
+
+/* .btn-games:hover {
+    background-color: #8d70e6;
+    transition: .5s;
+} */
+
+.app-store {
+    font-size: 55px;
+    color: white;
+    margin-right: 25px;
+}
+
+.play-market {
+    font-size: 45px;
+    color: white;
+    margin-right: 25px;
+}
+
+header {
+    background: url(../img/football_1920.png);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mgt-220px {
+    margin-top: 200px;
+}
+
+/* BOTTOM */
+
+footer {
+    background-image: url(../img/game_1920.png);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mgt-100px {
+    margin-top: 100px;
+}
+
+.down-app {
+    display: flex;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+}
+
+.down-app img {
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 130px;
+    height: 137px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer-p p:nth-child(1) {
+    font-family: "OS_Bold";
+    font-size: 80px;
+    color: white;
+}
+
+.footer-p p:nth-child(2) {
+    font-family: "OS_Regular";
+    font-size: 30px;
+    color: #a496ca;
+}
+
+/* ATHLETS */
+
+.zagolovok {
+    font-family: "OS_Bold";
+    font-size: 80px;
+    color: #e7e7e7;
+    transition: 1s;
+}
+
+/* .zagolovok:hover {
+    transform: translateX(60px);
+    transition: 1s;
+} */
+
+.zagolovok-2 {
+    font-family: "OS_Bold";
+    font-size: 36px;
+    color: #c1c1c1;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+/* .zagolovok-2:hover {
+    transform: translateX(30px);
+    transition: 1s;
+} */
+
+.opisanie {
+    font-family: "OS_Regular";
+    font-size: 20px;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-black {
+    color: black;
+}
+
+.color-dark-blue {
+    color: #0a0e34;
+}
+
+.color-fine-purple {
+    color: #9173e6;
+}
+
+.line-out-fon {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bc-color-white {
+    background-color: white;
+}
+
+.bc-color-almost-white {
+    background-color: #f6f4fa;
+}
+
+.bc-color-purple {
+    background-color: #5e42b0;
+}
+
+.bc-color-almost-2-white {
+    background-color: #f5f6f7;
+}
+
+.bc-color-dark-blue {
+    background-color: #0a0e34;
+}
+
+.players-name-num p {
+    font-family: "OS_Bold";
+    font-size: 18px;
+}
+
+.mini-line {
+    display: block;
+    height: 5px;
+    width: 20px;
+    border-radius: 20px;
+}
+
+.players-name-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 12px;
+}
+
+.players-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.pd-top-115 {
+    margin-top: 115px;
+}
+
+.pd-bot-50 {
+    padding-bottom: 50px;
+}
+
+.athlets {
+    position: relative;
+    overflow: hidden;
+}
+
+.atl {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-110%, 0%);
+    transition: 1s;
+}
+
+.players {
+    position: relative;
+    overflow: hidden;
+}
+
+.player {
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    transition: 1s;
+    transform: translate(-10%, 0%);
+}
+
+/* .player:hover{
+    right: 4%;
+    top: 3%;
+    transition: 1s;
+}
+
+.atl:hover {
+    left: 4%;
+    top: 3%;
+    transition: 1s;
+} */
+
+/* NEXT STEP */
+
+.step-p {
+    font-family: "OS_Regular";
+    font-size: 24px;
+    color: black;
+    padding-top: 40px;
+}
+
+.height-730 {
+    height: 730px;
+}
+
+
+
+.bc-img-1 {
+    background-image: url(../img/be-active_960.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bc-img-2 {
+    background-image: url(../img/find-contact_960.png);
+}
+
+.bc-img-3 {
+    background-image: url(../img/work-it_960.png);
+}
+
+
+
+.step .container{
+    position: relative;
+}
+
+.center-num {
+    height: 155px;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #5e42b0;
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    transition: 1s;
+    
+}
+
+
+
+.center-num p {
+    font-family: "OS_Bold";
+    color: white;
+    font-size: 24px;
+}
+
+.center-num-line {
+    display: block;
+    height: 5px;
+    width: 30px;
+    border-radius: 20px;
+}
+
+.bc-color-lite-purple {
+    background-color: #8f7bc8;
+}
+
+.step-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-none {
+    display: none;
+}
+
+.step {
+    position: relative;
+
+}
+
+.center-num {
+    position: absolute;
+    z-index: 100000000;
+}
+
+.down-app {
+    align-items: center;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1560px) {
+    .container{
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .col-md-6{
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .col-none {
+        flex-basis: 0%;
+        max-width: 0%;
+    }
+
+    .col-75 {
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+
+    header .col-12 p{
+        font-size: 64px;
+    }
+
+    .footer-p p:nth-child(1) {
+        font-family: "OS_Bold";
+        font-size: 64px;
+        color: white;
+    }
+
+    .line-out-fon {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .opisanie {
+        font-size: 16px;
+    }
+
+    .zagolovok-2 {
+        font-size: 32px;
+    }
+
+    .atl {
+        
+        top: 15%;
+        transition: 1s;
+        height: 650px;
+        transform: translate(-130%, 0%);
+    }
+
+    .col-60 {
+        max-width: 60%;
+        flex-basis: 60%;
+    }
+    .col-40 {
+        max-width: 40%;
+        flex-basis: 40%;
+    }
+    .player {
+        top: 7%;
+        height: 500px;
+        transform: translate(0%, 0%);
+    }
+
+    .pd-top-115 {
+        margin-top: 60px;
+    }
+
+    .pd-bot-50 {
+        padding-bottom: 0px;
+    }
+
+    .pd-left-30px {
+        padding-left: 30px;
+    }
+
+    .pd-right-30px {
+        padding-right: 30px;
+    }
+
+    .step .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .step .container .row .col-6 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .mini-container .zagolovok {
+        padding: 0px;
+    }
+
+    .mini-container .step-p {
+        padding: 0px;
+    }
+
+    .row-end .display-flex {
+        display: none;
+    }
+
+    .row-end .display-none {
+        display: flex;
+    }
+
+    .center-num {
+        top:60%;
+        left:18%;
+        
+    }
+
+    .down-app {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer-p {
+        flex-wrap: wrap;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+    .mini-container {
+        height: 430px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .footer-p {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ppp {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    .mini-container{
+        height: 550px;
+    }
+
+    .center-num {
+        top:55%;
+        left:18%;
+        
+    }
+
+    header .col-12 p{
+        font-size: 48px;
+    }
+
+    .footer-p p:nth-child(1) {
+
+        font-size: 48px;
+        color: white;
+    }
+
+    .footer-p p:nth-child(2) {
+        font-size: 24px;
+    }
+
+    .zagolovok {
+        font-size: 60px;
+    }
+    .zagolovok-2 {
+        font-size: 26px;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 570px) {
+    
+    .atl, .player {
+        display: none;
+    }
+
+    .col-40 {
+        flex-basis: 0%;
+        max-width: 0%;
+    }
+
+    .col-60 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+
+    header .col-12 p {
+        font-size: 30px;
+
+        color: white;
+    }
+
+    .btn-games {
+        height: 30px;
+    }
+
+    .play-market {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .btn-games {
+        
+    }
+
+    .app-store {
+        font-size: 20px;
+        margin-right: 10px;
+
+    }
+
+    .btn-games-text p:nth-child(1) {
+
+        font-size: 6px;
+        color: white;
+    }
+
+    .btn-games-text p:nth-child(2) {
+
+        font-size: 6px;
+        color: white;
+    }
+
+    .zagolovok {
+        font-size: 35px;
+    }
+
+    .step-p {
+        font-size: 18px;
+    }
+    .zagolovok-2 {
+        font-size: 16px;
+    }
+
+    .mini-container{
+        height: 260px;
+        width: 90%;
+    }
+
+    .center-num {
+        top: 70%;
+        left: 25%;
+        height: 100px;
+        width: 100px;
+    }
+
+
+    .footer-p p:nth-child(1) {
+    font-size: 30px;
+    }
+    .footer-p p:nth-child(2) {
+    font-size: 13px;
+    }
+
+    .down-app img {
+        margin-top: 00px;
+        margin-right: 00px;
+        height: 68.5px;
+        width: 65px;
+    }
+
+    .col-75 {
+        max-width: 90%;
+        flex-basis: 90%;
+    }
+
+    .mgt-100px {
+        margin-top: 0px;
+    }
+
+    .mgt-220px {
+        margin-top: 80px;
+    }
+
+    .down-app img {
+        margin-bottom: 45px;
+    }
+    .pd-bot-120px {
+        padding-bottom: 20px;
+    }
+}
